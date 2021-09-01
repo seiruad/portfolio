@@ -1,0 +1,46 @@
+
+/* ------------ 
+Contact Section
+--------------*/
+.section-contact .anti-row {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center ;
+}
+
+.contact-info {
+  padding: 0 15px;
+}
+
+.contact-info-item {
+  margin: 0 0 30px;
+  padding: 0 0 0 20px;
+}
+
+.contact-info-item h3 {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  margin: 0 0 5px;
+}
+
+.contact-info-item .social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background: var(--white-alpha-m);
+  border: 1px solid var(--white-alpha-n);
+  color: var(--color-main);
+  fill: var(--color-main);
+  border-radius: 50%;
+  margin: 6px 4px 0 0;
+  transition: all .3s ease 0s;
+}
+
+.contact-info-item .social-links a:hover {
+  color: var(--white);
+  fill: var(--white);
+  background: var(--color-main);
+}
+

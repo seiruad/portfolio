@@ -1,0 +1,127 @@
+
+/* ------------ 
+Portfolio Section
+--------------*/
+.portfolio-section {
+  padding-bottom: 50px;
+}
+
+.portfolio-item {
+  width: calc((100% / 3) - 30px);
+  margin: 0 15px 30px;
+}
+
+.portfolio-item-thumbnail {
+  padding: 10px;
+  background: var(--white-alpha-m);
+  border: 1px solid var(--white-alpha-n);
+  border-radius: 10px;
+}
+
+.portfolio-item-thumbnail img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.portfolio-item-details {
+  display: none;
+}
+
+.portfolio-item h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 20px 0;
+} 
+
+
+
+/* Portfolio Popup */
+.portfolio-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 200;
+  visibility: hidden;
+  
+}
+
+.portfolio-popup.open {
+  visibility: visible;
+  overflow-y: auto;
+}
+
+
+.pp-inner {
+  min-height: 100vh;
+  padding: 40px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pp-content {
+  background: var(--white-alpha-m);
+  padding: 30px;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 900px;
+  border: 1px solid var(--white-alpha-n);
+  backdrop-filter: var(--backdrop-filter-blur);
+  opacity: 0;
+  transform: scale(.9);
+}
+
+.portfolio-popup.open .pp-content {
+  opacity: 1;
+  transform: scale(1);
+  transition: all .5s ease 0s;
+}
+
+.pp-header {
+  position: relative;
+}
+
+.pp-header .btn {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -40px;
+  top: -40px;
+}
+
+.pp-thumbnail .img {
+  border-radius: 10px;
+}
+
+.pp-header h3 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin: 20px 0 15px;
+  font-weight: 600;
+}
+
+.pp-body .description {
+  margin-bottom: 20px;
+}
+
+.pp-body .general-info li {
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.pp-body .general-info li span {
+  font-weight: 300;
+}
+
+.pp-body .general-info li .link {
+  text-transform: lowercase;
+  color: var(--color-main);
+}
+

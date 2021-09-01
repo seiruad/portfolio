@@ -1,0 +1,11 @@
+
+/* temporarily hiding what you do not need right now */
+
+.about-tabs,
+.tab-content {
+  display: none !important;
+}
+
+.about-section .btn.link-item {
+  margin-top: 30px;  
+}

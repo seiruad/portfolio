@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./src/images/icons/face-icon.png">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./src/styles/main.css">
+  <link rel="stylesheet" href="./src/styles/header.css">
+  <link rel="stylesheet" href="./src/styles/buttons.css">
+  <link rel="stylesheet" href="./src/styles/section-portfolio.css">
+  <link rel="stylesheet" href="./src/styles/section-contact.css">
+  <link rel="stylesheet" href="./src/styles/config-responsove.css">
+  <link rel="stylesheet" href="./src/styles/config-hide.css">
+  
+  <title>Портфолио - Сергей Рядовенко</title>
+</head>
+<body>
+
+  <!-- Overlay Start -->
+  <div class="overlay">
+
+  </div>
+  <!-- Overlay End -->
+  
+
+
+  <!-- Main Start -->
+  <div class="main">
+
+    <!-- Header Start -->
+    <header class="header">
+      <div class="container">
+        <div class="anti-row flex-end">
+          <button type="button" class="nav-toggler">
+            <span></span>
+          </button>
+          <nav class="nav">
+            <div class="nav-inner">
+              <ul>
+                <li class="nav-item"><a href="#home" class="nav-link link-item">начало</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link link-item">обо мне</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link link-item">портфолио</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link link-item">связаться</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Home Section Start -->
+    <section class="section home-section" id='home'>
+      <div class="container">
+        <div class="row">
+          <div class="home-text">
+            <p>Здравствуйте, я</p>
+            <h1>Сергей Рядовенко</h1>
+            <h2>начинающий разработчик</h2>
+            <a href="#about" class="btn link-item">обо мне</a>
+            <a href="#portfolio" class="btn link-item">портфолио</a>
+          </div>
+          <div class="home-img">
+            <div class="img-box">
+              <img src="./src/images/profile-img.png" alt="" class="img" >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home Section End -->
+
+
+
+    <!-- About Section Start -->
+    <section class="section about-section sec-padding" id='about'>
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>обо мне</h2>
+          </div>
+        </div>
+
+        <div class="anti-row">
+          <div class="about-img">
+            <div class="img-box">
+              <img src="./src/images/about-img.png" alt="" class="img">
+            </div>
+          </div>
+          <div class="about-text">
+            <p>
+              1.&nbsp; В последние годы я проходил обучение без возможности работать. Сейчас готов все свое время уделять работе. Не боюсь ответственности <br/>
+              2.&nbsp; Ищу работу, где я смогу приносить пользу, смогу расти и развиваться<br/><br/>
+              
+              3.&nbsp; Могу быстро и самостоятельно научиться новым технологиям, быстро выучить новые языки программирования и фреймворки.<br/>
+              4.&nbsp; Свободно использую английский язык для поиска информации по нужной теме<br/>
+              5.&nbsp; Мои источники информации - официальная документация, youtube каналы, stackoverflow, статьи по результату гугл запроса - всё преимущественно на английском языке<br/>
+              6.&nbsp; Ингода прохожу онлайн курсы на Udemy, Coursera, Stepic и на других платформах<br/><br/>
+              
+              7.&nbsp; Люблю писать чистый код без повторений, который смогу понять в будущем.<br/>
+              8.&nbsp; Всегда выполняю задание чётко так, как оно поставленно. Могу проявить творчество, но только если это приветствуется<br/>
+              9.&nbsp; Доброжелательный, учитываю интересы других людей, всегда ищу способ как и что можно улучшить<br/>
+              </p>
+            <h3>навыки</h3>
+            <div class="skills">
+              <div class="skill-item">javascript</div>
+              <div class="skill-item">html</div>
+              <div class="skill-item">css/scss</div>
+              <div class="skill-item">react</div>
+              <div class="skill-item">node.js</div>
+              <div class="skill-item">postgresql</div>
+            </div>
+
+            <div class="about-tabs">
+              <button type='button' class="tab-item active" data-target="#education" >education</button>
+              <button type='button' class="tab-item" data-target="#experience" >experience</button>
+            </div>
+
+            <!-- Education Start -->
+            <div class="tab-content active" id="education">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">2013-2016</span>
+                  <h4>bachelor of technology - <span>main university</span></h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque laborum quas, vero tempore iste nesciunt!</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">2013-2016</span>
+                  <h4>bachelor of technology - <span>main university</span></h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque laborum quas, vero tempore iste nesciunt!</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">2013-2016</span>
+                  <h4>bachelor of technology - <span>main university</span></h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque laborum quas, vero tempore iste nesciunt!</p>
+                </div>
+              </div>
+            </div>
+            <!-- Education End -->
+
+            <!-- Experience Start -->
+            <div class="tab-content" id="experience">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">2013-2016</span>
+                  <h4>Начинающий специалист - <span>важная компания</span></h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque laborum quas, vero tempore iste nesciunt!</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">2013-2016</span>
+                  <h4>bachelor of technology - <span>main university</span></h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque laborum quas, vero tempore iste nesciunt!</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">2013-2016</span>
+                  <h4>bachelor of technology - <span>main university</span></h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque laborum quas, vero tempore iste nesciunt!</p>
+                </div>
+              </div>
+            </div>
+            <!-- Experience End -->
+            <!-- <a href="cv.pdf" class="btn link-item">download cv</a> -->
+            <a href="#portfolio" class="btn link-item">портфолио</a>
+            <a href="#contact" class="btn link-item">связаться со мной</a>
+          </div> 
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+
+    
+    <!-- Portfolio Section Start -->
+    <section class="section portfolio-section sec-padding" id='portfolio'>
+      <div class="container">
+        <div class="anti-row">
+          <div class="section-title">
+            <h2>недавние работы</h2>
+          </div>
+        </div>
+        <div class="anti-row">
+          <!-- Portfolio Item Start -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="./src/images/portfolio/lime-table.PNG" alt="portfolio item thumb">
+            </div>
+            <h3 class="portfolio-item-title">lime table</h3>
+            <button class="btn btn-view-project">подробнее</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>Таблица с фильтрами. Приложение получает данные для таблицы get запросом. Фильтры создаются динамически - на основании данных. Таблицу также можно сортировать по любой строке.</p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Создано - <span>19 Авг 2021</span></li>
+                  <li>технологии - <span>Angular, Typescript, Scss</span></li>
+                  <!-- <li>Role - <span>Frontend</span></li> -->
+                  <li>Посмотреть - <span><a href="https://lime-table-df25e8.netlify.app/" class='link' >https://lime-table-df25e8.netlify.app/</a></span></li>
+                  <li>Исходный код - <span><a href="https://github.com/seiruad/lime-table-angular" class='link' >https://github.com/seiruad/lime-table-angular</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio Item End -->
+          <!-- Portfolio Item Start -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="./src/images/portfolio/theme-switcher.jpg" alt="portfolio item thumb">
+            </div>
+            <h3 class="portfolio-item-title">Theme Switcher</h3>
+            <button class="btn btn-view-project">подробнее</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>Можно выбрать тему всего сайта, например: dark-theme, light-theme или любую другую.</p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Создано - <span>11 Авг 2021</span></li>
+                  <li>технологии - <span>Scss, React</span></li>
+                  <!-- <li>Role - <span>Frontend</span></li> -->
+                  <li>Посмотреть - <span><a href="https://react-theme-switcher-173dd1.netlify.app/" class='link' >https://react-theme-switcher-173dd1.netlify.app/</a></span></li>
+                  <li>Исходный код - <span><a href="https://github.com/seiruad/react-theme-switcher" class='link' >https://github.com/seiruad/react-theme-switcher</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio Item End -->
+          <!-- Portfolio Item Start -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="./src/images/portfolio/auth-form.png" alt="portfolio item thumb">
+            </div>
+            <h3 class="portfolio-item-title">Форма Регистрации</h3>
+            <button class="btn btn-view-project">подробнее</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>Форма для регистрации и входа в аккаунт с client-side валидатором, который я написал с нуля.</p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Создано - <span>9 Авг 2021</span></li>
+                  <li>технологии - <span>React, React-Redux, Scss</span></li>
+                  <!-- <li>Role - <span>Frontend</span></li> -->
+                  <li>Посмотреть - <span><a href="https://auth-form-48e0d3.netlify.app/" class='link' >https://auth-form-48e0d3.netlify.app/</a></span></li>
+                  <li>Исходный код - <span><a href="https://github.com/seiruad/react-auth-form" class='link' >https://github.com/seiruad/react-auth-form</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio Item End -->
+          <!-- Portfolio Item Start -->
+          <div class="portfolio-item">
+          <div class="portfolio-item-thumbnail">
+            <img src="./src/images/portfolio/socialmedia.png" alt="portfolio item thumb">
+          </div>
+          <h3 class="portfolio-item-title">Мини социальная сеть</h3>
+          <button class="btn btn-view-project">подробнее</button>
+          <div class="portfolio-item-details">
+            <div class="description">
+              <p>Мини приложение - социальная сеть. Можно создать аккаунт, настроить его, публиковать посты, ставить лайки и подписываться на других пользователей. Пока готов только сервер.</p>
+            </div>
+            <div class="general-info">
+              <ul>
+                <li>Создано - <span>25 Авг 2021</span></li>
+                <li>технологии - <span>Node js, Express, postgreSQL</span></li>
+                <!-- <li>Role - <span>Frontend</span></li> -->
+                <!-- <li>Посмотреть - <span><a href="#" class='link' ></a></span></li> -->
+                <li>Исходный код - <span><a href="https://github.com/seiruad/socialmedia" class='link' >https://github.com/seiruad/socialmedia</a></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item End -->
+          <!-- Portfolio Item Start -->
+          <!-- <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="./src/images/portfolio/6.jpg" alt="portfolio item thumb">
+            </div>
+            <h3 class="portfolio-item-title">product landing page</h3>
+            <button class="btn btn-view-project">view project</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestiae beatae modi illum ipsa fugiat praesentium neque, expedita reprehenderit adipisci, sint doloribus sunt assumenda. Id minus explicabo eum inventore, voluptates cupiditate eos ex consequatur dolorum modi tempora repellat repudiandae. Et?</p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Created - <span>4 Dec 2020</span></li>
+                  <li>technologies used - <span>Javascript, Css</span></li>
+                  <li>Role - <span>Frontend</span></li>
+                  <li>View online - <span><a href="http://localhost:4200" >http://localhost:4200</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div> -->
+          <!-- Portfolio Item End -->
+          
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+
+
+    <!-- Contact Section Start -->
+    <section class="section section-contact sec-padding" id='contact' >
+      <div class="container">
+        <div class="anti-row">
+          <div class="section-title">
+            <h2>связаться</h2>
+          </div>
+        </div>
+        <div class="anti-row">
+          <!-- <div class="contact-form"></div> DISABLED -->
+          <div class="anti-contact-info"></div>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <h3>Электронная почта</h3>
+              <p>sergeiruad@gmail.com</p>
+            </div>
+            <!-- <div class="contact-info-item">
+              <h3>Phone</h3>
+              <p>89513899039</p>
+            </div> -->
+            <div class="contact-info-item">
+              <h3>социальные сети</h3>
+              <div class="social-links">
+                <a href="https://vk.com/seiruad" class="link vk-link" ><svg class='icon' width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.469 9c.28 0 .385.124.49.43.535 1.574 1.437 2.95 1.808 2.95.125 0 .189-.052.2-.323l.002-.098v-1.628c-.04-.75-.434-.81-.434-1.077a.26.26 0 01.216-.248L10.813 9h1.72c.206 0 .292.099.309.318l.003.088v2.19c0 .234.1.316.17.316.14 0 .255-.082.51-.34.788-.89 1.345-2.26 1.345-2.26a.465.465 0 01.388-.307L15.346 9h1.093c.331 0 .4.172.331.406-.128.595-1.274 2.257-1.45 2.509l-.022.032c-.116.188-.162.281 0 .492.116.164.499.492.754.796.47.534.824.985.922 1.296.083.285-.041.442-.303.466l-.075.003h-1.094c-.417 0-.54-.336-1.282-1.086-.649-.632-.927-.714-1.089-.714-.198 0-.271.051-.284.292l-.002.087v.991c0 .272-.086.43-.782.43-1.159 0-2.432-.71-3.336-2.022C7.37 11.058 7 9.605 7 9.313c0-.148.05-.283.288-.309L7.375 9h1.094z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M10.754 3.1h2.492c1.27 0 2.288 0 3.105.078.841.08 1.563.248 2.21.644a4.9 4.9 0 011.617 1.618c.396.646.564 1.368.644 2.209.078.817.078 1.835.078 3.105v2.492c0 1.27 0 2.288-.078 3.106-.08.84-.248 1.562-.644 2.208a4.9 4.9 0 01-1.618 1.618c-.646.396-1.368.564-2.209.644-.817.078-1.835.078-3.105.078h-2.492c-1.27 0-2.288 0-3.106-.078-.84-.08-1.562-.248-2.208-.644a4.9 4.9 0 01-1.618-1.618c-.396-.646-.564-1.368-.644-2.208-.078-.818-.078-1.836-.078-3.106v-2.492c0-1.27 0-2.288.078-3.105.08-.841.248-1.563.644-2.21A4.9 4.9 0 015.44 3.823c.646-.396 1.368-.564 2.208-.644.818-.078 1.836-.078 3.106-.078zM7.82 4.97c-.71.067-1.123.193-1.439.387A3.1 3.1 0 005.357 6.38c-.194.316-.32.73-.388 1.439-.068.722-.07 1.654-.07 2.981v2.4c0 1.327.002 2.259.07 2.981.068.71.194 1.123.388 1.439a3.1 3.1 0 001.023 1.023c.316.194.73.32 1.439.387.722.07 1.654.07 2.98.07h2.4c1.328 0 2.26 0 2.982-.07.709-.067 1.123-.193 1.439-.387a3.1 3.1 0 001.023-1.023c.194-.316.32-.73.387-1.439.069-.722.07-1.654.07-2.981v-2.4c0-1.327-.001-2.259-.07-2.981-.067-.71-.194-1.123-.387-1.439a3.1 3.1 0 00-1.023-1.023c-.316-.194-.73-.32-1.439-.387-.722-.069-1.654-.07-2.981-.07h-2.4c-1.327 0-2.259.001-2.981.07z" fill="currentColor"/></svg></a>
+                <a href="https://github.com/seiruad" class="link github-link" ><svg class='icon' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="anti-contact-info"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+  </div>
+  <!-- Main End -->
+
+
+
+  <!-- Popup Portfolio Item Details Start -->
+  <div class="portfolio-popup">
+    <div class="pp-inner">
+      <div class="pp-content">
+        <div class="pp-header">
+          <button type='button' class="btn pp-close"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" class='icon-close'><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg></button>
+          <div class="pp-thumbnail">
+            <img src="./src/images/portfolio/3.jpg" class='img' alt="pp-thumbnail">
+          </div>
+          <h3></h3>
+        </div>
+        <div class="pp-body">
+          <!-- <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestiae beatae modi illum ipsa fugiat praesentium neque, expedita reprehenderit adipisci, sint doloribus sunt assumenda. Id minus explicabo eum inventore, voluptates cupiditate eos ex consequatur dolorum modi tempora repellat repudiandae. Et?</p>
+          </div>
+          <div class="general-info">
+            <ul>
+              <li>Created - <span>4 Dec 2020</span></li>
+              <li>technologies used - <span>Javascript, Css</span></li>
+              <li>Role - <span>Frontend</span></li>
+              <li>View online - <span><a href="http://localhost:4200" class="link" >http://localhost:4200</a></span></li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Popup Portfolio Item Details End -->
+
+
+  <script src="./index.js"></script>
+</body>
+</html>

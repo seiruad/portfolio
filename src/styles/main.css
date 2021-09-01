@@ -1,0 +1,289 @@
+
+.section {
+  background: var(--white-alpha-m);
+  border: 1px solid  var(--white-alpha-n);
+  min-height: calc(100vh - 70px);
+  border-radius: 30px;
+  backdrop-filter: var(--backdrop-filter-blur);
+  display: none;
+
+}
+
+.section.active {
+  display: block;
+  animation: fadeIn .5s ease-in-out forwards;
+}
+
+.section.fade-out {
+  animation: fadeOut .5s ease-in-out forwards;
+}
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+  transition: all .5s ease-in-out;
+  position: relative;
+}
+
+.main.fade-out {
+  opacity: 0;
+}
+
+.container {
+  padding: 0 40px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.anti-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.sec-padding {
+  padding: 80px 0;
+}
+
+.section-title {
+  padding: 0 15px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+
+
+
+
+/* ------------ 
+Home Section
+ ------------*/
+.home-section {
+  align-items: center;
+  padding: 120px 0;
+}
+
+.home-section.active {
+  display: flex;
+}
+
+.home-text,
+.home-img {
+  width: 50%;
+  padding: 15px;
+}
+
+.home-text p {
+  font-size: 1.125rem;
+
+}
+
+.home-text h1 {
+  font-size: 3.125rem;
+  text-transform: capitalize;
+}
+
+.home-text h2 {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  font-weight: 300;
+  margin: 0 0 30px;
+}
+
+.home-text .btn {
+  margin: 0 15px 15px 0;
+}
+
+.home-img .img-box {
+  max-width: 360px;
+  background: var(--white-alpha-m);
+  border-radius: 50%;
+  border: 8px solid var(--white-alpha-m);
+  margin: auto;
+}
+
+.home-img .img-box .img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+
+
+/* ------------ 
+About Section
+--------------*/
+.about-img {
+  width: 40%;
+  padding: 0 15px;
+}
+
+.about-text {
+  width: 60%;
+  padding: 0 15px;
+}
+
+.about-img .img-box {
+  background: var(--white-alpha-m);
+  max-width: 380px;
+  border: 1px solid var(--white-alpha-n);
+  margin: auto;
+  border-radius: 10px;
+}
+
+.about-img .img-box .img {
+  width: 100%;
+}
+
+.about-text h3 {
+  text-transform: capitalize;
+  font-size: 20px;
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+.about-text .skills {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.about-text .skill-item {
+  background: var(--white-alpha-m);
+  border: 1px solid var(--white-alpha-m);
+  padding: 5px 15px;
+  text-transform: lowercase;
+  margin: 0 10px 10px 0;
+  border-radius: 20px;
+}
+
+.about-tabs {
+  margin-top: 20px;
+}
+
+.about-tabs .tab-item {
+  padding: 2px 0;
+  background: transparent;
+  border: none;
+  text-transform: capitalize;
+  display: inline-block;
+  color: var(--alpha-dark);
+  font-size: 1.25rem;
+  cursor: pointer;
+  font-weight: 500;
+  margin: 0 30px 0 0;
+  position: relative;
+  opacity: .5;
+  transition: all .3s ease 0s;
+}
+
+.about-tabs .tab-item:last-child {
+  margin: 0;
+}
+
+.about-tabs .tab-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: var(--alpha-dark);
+  transition: width .3s ease 0s;
+}
+
+.about-tabs .tab-item:hover::before {
+  width: 100%;
+}
+
+.about-tabs .tab-item.active::before {
+  width: 100%;
+  background: var(--color-main);
+}
+
+.about-tabs .tab-item.active {
+  color: var(--color-main);
+  opacity: 1;
+  cursor: auto;
+}
+
+.about-text .timeline {
+  position: relative;
+}
+
+.about-text .timeline::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  top: 0;
+  left: 5px;
+  background: var(--color-main);
+}
+
+.about-text .tab-content {
+  padding: 40px 0;
+  display: none;
+}
+
+.about-text .tab-content.active {
+  display: block;
+}
+
+.about-text .timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+  padding: 10px 0 0 40px;
+}
+
+.about-text .timeline-item::before {
+  content: '';
+  position: absolute;
+  height: 11px;
+  width: 11px;
+  background: var(--color-main);
+  left: 0;
+  top: 16px;
+  border-radius: 50%;
+}
+
+.about-text .timeline-item:last-child {
+  margin-bottom: 0;
+}
+ 
+.about-text .timeline-item .date {
+  display: block;
+  color: var(--color-main);
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+
+.about-text .timeline-item h4 {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 0 0 10px;
+
+}
+
+.about-text .timeline-item h4 span {
+  font-weight: 400;
+}
+
+.about-text .btn {
+  margin: 0 15px 15px 0;
+}
+
+
