@@ -1,6 +1,19 @@
 
 /* Responsive */
 @media (max-width: 991px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+    
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--white-alpha-m);
+    border-radius: 25%;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 25%;
+  }
+  
   .container {
     padding: 0;
   }

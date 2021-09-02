@@ -50,6 +50,8 @@ Portfolio Section
 .portfolio-popup.open {
   visibility: visible;
   overflow-y: auto;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
 }
 
 

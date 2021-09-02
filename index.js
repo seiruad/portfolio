@@ -1,13 +1,13 @@
 const toggleScroll = () => {
-  document.body.classList.toggle('hide-scrolling');
+  document.querySelector('.root').classList.toggle('hide-scrolling');
 }
 
 const showScroll = () => {
-  document.body.classList.remove('hide-scrolling');
+  document.querySelector('.root').classList.remove('hide-scrolling');
 }
 
 const hideScroll = () => {
-  document.body.classList.add('hide-scrolling');
+  document.querySelector('.root').classList.add('hide-scrolling');
 }
 
 const toggleNavbar = () => {
@@ -90,6 +90,7 @@ const copyItemInfo = (portfolioItem) => {
 }
 
 document.addEventListener('click', e => {
+  // e.preventDefault()
   if (e.target.classList.contains('btn-view-project')) {
     togglePortfolioPopup();
     document.querySelector('.portfolio-popup').scrollTo(0,0);
@@ -108,4 +109,7 @@ document.addEventListener('click', e => {
 })
 
 
-document.querySelector('.home-section').classList.add('active')
+setTimeout(() => {
+  document.querySelector('.home-section').classList.add('active')
+}, 400)
+
