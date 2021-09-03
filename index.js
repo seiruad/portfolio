@@ -10,6 +10,10 @@ const hideScroll = () => {
   document.querySelector('.root').classList.add('hide-scrolling');
 }
 
+const scrollToTheTop = () => {
+  document.querySelector('.root').scrollTo(0, 0);
+}
+
 const toggleNavbar = () => {
   document.querySelector('.header').classList.toggle('active');
 }
@@ -25,7 +29,6 @@ navToggler.addEventListener('click', () => {
   hideSection();
   toggleNavbar();
   toggleScroll();
-
 })
 
 
@@ -49,7 +52,7 @@ document.addEventListener('click', e => {
     setTimeout(() => {
       document.querySelector('.section.active').classList.remove('active', 'fade-out');
       document.querySelector(hash).classList.add('active');
-      window.scrollTo(0, 0);
+      scrollToTheTop();
       showScroll();
       navToggler.classList.remove('hide');
       document.querySelector('.overlay').classList.remove('active');
